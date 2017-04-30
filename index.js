@@ -7,7 +7,9 @@ var url_model = require('./models/url_model');
 
 var app = express();
 
-
+app.get("/",(req,res)=>{
+	res.send("hello");
+})
 app.get('/api/imagesearch/:q',function(req,res){
 	//res.send(req.params.q+' query:'+req.query.offset);
 	let my_res = [];
