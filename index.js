@@ -31,6 +31,10 @@ app.get('/api/latest/imagesearch',(req,res)=>{
 	})
 })
 
-app.listen(3000,()=>{
-	console.log('on air');
+var port = Number(process.env.PORT || 5000);
+app.listen(port,()=>{
+	console.log("listening"+port);
 })
+/*app.listen(3000,()=>{
+	console.log('on air');
+})*/
